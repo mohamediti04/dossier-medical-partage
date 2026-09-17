@@ -1,21 +1,47 @@
-MIT License
+# Accord de Licence Logicielle et Mentions Tiers
 
-Copyright (c) 2026 Mohamed ITI
+## 1. Licence Propriétaire (Dossier Médical Électronique Partagé - DMEP)
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Copyright (c) 2026 Tout Organisme de la Santé. Tous droits réservés.
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+Ce logiciel et toute la documentation associée (le "Logiciel") sont la propriété exclusive et confidentielle de Tout Organisme de la Santé. L'utilisation, la copie, la modification, la distribution, la commercialisation ou la décompilation de ce code source, en tout ou en partie, sans une autorisation écrite, préalable et expresse de l'établissement, sont strictement interdites.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+Compte tenu de la nature hautement sensible, confidentielle et critique des données de santé gérées par cette application, toute violation des droits d'auteur, utilisation non autorisée ou tentative de rétro-ingénierie fera l'objet de poursuites judiciaires immédiates conformément aux lois en vigueur sur la protection des données sanitaires et de la propriété intellectuelle.
+
+---
+
+## 2. Mentions Relatives aux Technologies et Licences Tiers
+
+Ce projet est développé en s'appuyant sur des frameworks, bibliothèques et technologies open-source ou commerciales de premier plan. Conformément à leurs licences respectives, les avis de droit d'auteur et les conditions d'utilisation sont détaillés ci-dessous :
+
+### A. Framework Frontend Angular
+* **Licence :** MIT License
+* **Droit d'auteur :** Copyright (c) Google LLC et ses contributeurs.
+* **Compatibilité :** Permet l'intégration complète d'Angular dans cette solution propriétaire sans aucune restriction de distribution pour le DMEP.
+
+### B. Écosystème Spring Boot & Spring Framework
+* **Licence :** Apache License 2.0
+* **Droit d'auteur :** Copyright (c) VMware, Inc. ou ses affiliés.
+* **Compatibilité :** Permet l'intégration au sein d'une architecture Microservices propriétaire sans obligation d'ouvrir le code source de l'application DMEP.
+
+### C. Spécifications Jakarta EE / Java EE
+* **Licence :** Eclipse Public License 2.0 (EPL-2.0)
+* **Droit d'auteur :** Copyright (c) Eclipse Foundation et ses contributeurs.
+
+### D. Plateforme de Streaming d'Événements (Middleware)
+* **Apache Kafka :** Sous licence Apache License 2.0 (Copyright The Apache Software Foundation).
+* **Usage :** Utilisé comme bus d'événements pour la communication asynchrone et hautement disponible entre les microservices du DMEP.
+
+### E. Outils et Outils DevOps (CI/CD, Conteneurisation & Infrastructure as Code)
+* **Docker / Moby :** Sous licence Apache License 2.0 (Copyright dotCloud, Inc. / Docker, Inc.). Utilisé pour la conteneurisation des microservices.
+* **HashiCorp Terraform :** Sous licence Business Source License 1.1 (BSL / BUSL-1.1). Utilisé pour le provisionnement automatisé de l'infrastructure. Son utilisation interne pour le déploiement du DMEP respecte les termes de HashiCorp.
+* **Kubernetes :** Sous licence Apache License 2.0 (Copyright The Linux Foundation).
+* **Jenkins / GitLab CI :** Sous licence MIT / Propriétaire (selon la version exploitée par l'infrastructure).
+
+### F. Système de Gestion de Base de Données Oracle
+* **Licence :** Commerciale / Propriétaire (soumise aux termes du contrat de licence d'entreprise souscrit par Tout Organisme de la Santé).
+* **Droit d'auteur :** Copyright (c) Oracle Corporation.
+* **Conformité :** L'implémentation assure l'intégrité, le chiffrement et la sécurité critique exigés pour le stockage des registres médicaux nationaux.
+
+---
+*Note : La liste exhaustive de toutes les dépendances applicatives secondaires (fichiers JAR transitoires, modules npm Angular) ainsi que leurs licences respectives sont générées automatiquement et consultables dans le répertoire `/target/licenses` du livrable de production.*
